@@ -1,15 +1,14 @@
 class Data {
-  final int? id;
+  int? id;
   final String name;
   final String city;
 
-  Data({required this.name, required this.city, this.id});
+  Data({required this.name, required this.city});
 
-  factory Data.rawToobject({required Map data}) {
+  factory Data.rawToObject({required Map data}) {
     return Data(
       name: data['name'],
       city: data['city'],
-      id: data['id'],
     );
   }
 }

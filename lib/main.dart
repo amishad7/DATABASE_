@@ -1,4 +1,4 @@
-import 'package:database_project/modules/screens/home.dart';
+import 'package:database_project/modules/screens/home/view/home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -10,7 +10,7 @@ void main() {
       getPages: [
         GetPage(
           name: '/home',
-          page: () => const Home(),
+          page: () => Home(),
         ),
       ],
     ),
